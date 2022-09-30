@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/284d7e7b37.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/00/14/37/02/1000_F_14370291_uyQOo8ckxrSZhqUDzv0JeCjTkpWg7Yjs.jpg">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="phone">
+        <div id="divLeft">
+            <h2><i class="fa-solid fa-calculator ic"></i>TIP CALCULATOR</h2>
+            <div class="container">
+                <div class="l">
+                    <div id="div2">
+                        <label for="billamt">Bill</label><br>
+                        <i class="fa-solid fa-dollar-sign icon"></i>
+                        <input id="billamt" name="billInput" type="text" placeholder="0">
+                    </div>
+
+                    <div id="div3">
+                        <p>Select Tip <i class="fa-solid fa-percent"></i></p>
+                        <div id="serviceQual">
+                            <button id="b1" onclick="b1fuc()" value="0.3">30%</button>
+                            <button id="b2" onclick="b2fuc()" value="0.25">25%</button>
+                            <button id="b3" onclick="b3fuc()" value="0.2">20%</button>
+                            <br><button id="b4" onclick="b4fuc()" value="0.15">15%</button>
+                            <button id="b5" onclick="b5fuc()" value="0.1">10%</button>
+                            <button id="b6" onclick="b6fuc()" value="0.05">5%</button>
+
+                        </div>
+                    </div>
+
+                    <div id="div2">
+                        <p id="p1">Number of People</p>
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" id="peopleamt" placeholder="0">
+                    </div>
+                </div>
+
+                <div id="divRight">
+                    <div class="innerR">
+                        <div id="div5">
+                            <div id="leInner">
+                                <h3 id="amt">Tip Amount <br><span id="samt">/ person</span></h3>
+                                <h3 id="amt">Total<br><span id="samt">/ person</span></h3>
+                            </div>
+                            <div id="riInner">
+                                <h3 id="h2"><i class="fa-solid fa-dollar-sign"></i> 0.00</h3>
+                                <h3 id="h3"><i class="fa-solid fa-dollar-sign"></i> 0.00</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="calcuateBox">
+                        <div id="div4">
+                            <button id="calculate" type="submit">Calculate</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
