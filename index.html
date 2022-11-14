@@ -20,13 +20,13 @@
                     <div id="div2">
                         <label for="billamt">Bill</label><br>
                         <i class="fa-solid fa-dollar-sign icon"></i>
-                        <input id="billamt" name="billInput" type="text" placeholder="0">
+                        <input id="billamt" name="billInput" type="text" min="0" placeholder="0">
                     </div>
 
                     <div id="div3">
                         <p>Select Tip <i class="fa-solid fa-percent"></i></p>
                         <div id="serviceQual">
-                            <button id="b1" onclick="b1fuc()" value="0.3">30%</button>
+                            <button id="b1" value="0.3">30%</button>
                             <button id="b2" onclick="b2fuc()" value="0.25">25%</button>
                             <button id="b3" onclick="b3fuc()" value="0.2">20%</button>
                             <br><button id="b4" onclick="b4fuc()" value="0.15">15%</button>
@@ -39,7 +39,7 @@
                     <div id="div2">
                         <p id="p1">Number of People</p>
                         <i class="fa fa-user icon"></i>
-                        <input type="text" id="peopleamt" placeholder="0">
+                        <input type="text" id="peopleamt"  placeholder="0">
                     </div>
                 </div>
 
@@ -49,10 +49,12 @@
                             <div id="leInner">
                                 <h3 id="amt">Tip Amount <br><span id="samt">/ person</span></h3>
                                 <h3 id="amt">Total<br><span id="samt">/ person</span></h3>
+                                <h3 id="amt">Total</h3>
                             </div>
                             <div id="riInner">
                                 <h3 id="h2"><i class="fa-solid fa-dollar-sign"></i> 0.00</h3>
                                 <h3 id="h3"><i class="fa-solid fa-dollar-sign"></i> 0.00</h3>
+                                <h3 id="h4"><i class="fa-solid fa-dollar-sign"></i> 0.00</h3>
                             </div>
                         </div>
                     </div>
